@@ -3,7 +3,8 @@ These are my machine learning projects that I have completed for Data Science th
 ## Car Resell (Linear Regression)
 <details>
 ### Summary
-<summary>This is one of my Linear Regression practice projects. I got this dataset from Kaggle to practice my Linear Regression models. This is a web scraped dataset that is of used cars posted for resell. This means the prices aren't always going to be a fair or reasonable price but it makes it interesting to look at.</summary></details>
+<summary>This is one of my Linear Regression practice projects. I got this dataset from Kaggle to practice my Linear Regression models. This is a web scraped dataset that is of used cars posted for resell. This means the prices aren't always going to be a fair or reasonable price but it makes it interesting to look at.</summary>
+</details>
 ### Data Cleaning
 <details>
 I start off every project looking at the data using .info(), .describe(), and just looking at the first and last 5 rows of the dataset. This gives a quick insight on how everything looks and what you need to change. I see right away that there is 7 columns that need to be changed because they are object data types. So next I go through each of these columns and see if one hot encoding is the right way to go about it and to see if there is other data cleaning to do. This dataset did have a lot of values put in the wrong columns or values that didn't belong there. A few examples of what I had to do was create masks to drop rows with certain values in the string, renaming a column, one hot encoding, changing object to datetime, using a simple imputer, dropping useless columns, and creating an age column.
