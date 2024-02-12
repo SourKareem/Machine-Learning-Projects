@@ -1,7 +1,7 @@
 # Machine-Learning-Projects
 These are my machine learning projects that I have completed for Data Science that showcase my skills in Python, data cleaning, and machine learning.
-<details>
 ## Car Resell (Linear Regression)
+<details>
 ### Summary
 <summary>This is one of my Linear Regression practice projects. I got this dataset from Kaggle to practice my Linear Regression models. This is a web scraped dataset that is of used cars posted for resell. This means the prices aren't always going to be a fair or reasonable price but it makes it interesting to look at.</summary>
 </details>
