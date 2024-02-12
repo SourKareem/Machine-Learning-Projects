@@ -11,7 +11,7 @@ I start off every project looking at the data using .info(), .describe(), and ju
 Now I did a heatmap to get a sense of correlation between price and the other variables, then split the dataset into the training and testing splits. I then used the Standard Scaler and fit the datasets, then import the Linear Regression model from sklearn.
 </details>
 <details>
-<summary>Model Training & Testing</summary>
+<summary>Results</summary>
 The score I got was 0.01999 which is awful and shows that the model was not good at predicting the price at all. This is most likely due to the fact that the prices aren't regulated or calculated by the people posting them so the prices can be very off from what would be considered fair. There could be other factors like the brand name that will increase a car's price because of the name, and general wear and tear that could bring these other prices down. This was a great dataset for learning and practicing data cleaning but not so great for predictions.
 </details>
 
