@@ -62,81 +62,62 @@ Then I did my standard scaler and train test split.
 Here I used a confusion matrix and the classification report to get more in-depth with the results and how the model predicts. You can see that when it is true that the user churned, it wasn't good at predicting that. This could be due to the lower amount of churned users in the dataset, so it couldn't train well enough. I think that the model is good at predicting when a user will stay, but not when a user is going to leave. This could be fixed with more data potentially.
 </details>
 
-## Project (Model type)
-This is one of my K Nearest Neighbors practice projects. I got this dataset from Kaggle to practice my KNN models. We are classifying a patients diagnosis as Benign (B) or Malignant (M)
-<details>
-<summary>Data Cleaning</summary>
-I start off every project looking at the data using .info(), .describe(), and just looking at the first and last 5 rows of the dataset. This gives a quick insight on how everything looks and what you need to change. 
-</details>
-<details>
-<summary>Model Training & Testing</summary>
-
-</details>
-<details>
-<summary>Results</summary>
-
-</details>
-
 ## Diagnosis Model Comparison (SVM & KNN)
-This was project to compare the effectiveness of the SVM and KNN models. I got another cancer diagnosis dataset that was similar to the last one I used.
+This was project to compare the effectiveness of the SVM and KNN models. I got another cancer diagnosis dataset that was similar to the last one I used. We are classifying a patients diagnosis as Benign (B) or Malignant (M).
 <details>
 <summary>Data Cleaning</summary>
-I start off every project looking at the data using .info(), .describe(), and just looking at the first and last 5 rows of the dataset. This gives a quick insight on how everything looks and what you need to change. 
+I start off every project looking at the data using .info(), .describe(), and just looking at the first and last 5 rows of the dataset. This gives a quick insight on how everything looks and what you need to change. Nothing to clean on this dataset luckily.
 </details>
 <details>
 <summary>Model Training & Testing</summary>
+I just used my standard procedure of StandardScaler, train_test_split. I then trained the SVM model and used it to predict and get the scores of it. Then repeated the process for the KNN model.
+</details>
+<details>
+<summary>Results</summary>
+You can see that the SVM had a 0.03 higher score in accuracy. This usually wouldn't be significant but because of how high their accuracy already is, that last 3% is very important. So the SVM model is definitely the way to go for this dataset.
+</details>
 
+## Sales Predictor (Linear Regression)
+This is one of my Linear Regression practice projects. I got this dataset from Kaggle to practice my LR models. This is supposed to predict sales based on how much is invested in other forms of advertising.
+<details>
+<summary>Data Cleaning</summary>
+I start off every project looking at the data using .info(), .describe(), and just looking at the first and last 5 rows of the dataset. This gives a quick insight on how everything looks and what you need to change. The only things I need to do now is to one hot encode the influencer column and to impute the missing values. 
+</details>
+<details>
+<summary>Model Training & Testing</summary>
+I just used my standard procedure of StandardScaler, train_test_split.
+</details>
+<details>
+<summary>Results</summary>
+I got the results with an accuracy of 99%. This is almost certainly due to the dataset being for practicing and not really a random dataset. I then used just the TV column because it had almost a 1:1 correlation with the sales and the results were almost identical. This concludes that if this was real, TV advertisements have a linear affect on sales.
+</details>
+
+## Titanic (Random Forest)
+This was my first ever project with machine learning. This was a guided project as I followed someone else's directions> I learned a lot about the process of training these models and getting them ready to train and predict.
+<details>
+<summary>Data Cleaning</summary>
+I start off every project looking at the data using .info(), .describe(), and just looking at the first and last 5 rows of the dataset. This gives a quick insight on how everything looks and what you need to change. I created a pipeline to transform, impute and drop columns. This saved a ton of time and taught me a lot about the process.
+</details>
+<details>
+<summary>Model Training & Testing</summary>
+Then I use the scaler and the random forest model with a parameter grid to determine the best parameters for the model. Then I do this for the actual test dataset and submitted the results. I got a score of 77.
 </details>
 <details>
 <summary>Results</summary>
 
 </details>
 
-## Bank Churn (Logistic Regression)
-This is one of my Logistic Regression practice projects. I got this dataset from Kaggle to practice my Logistic Regression models. We are classifying a user as churned or stayed and will use it to predict other customers on if they will churn or stay.
+## Model Comparison (Decision Tree and Random Forest)
+This project was for me to see how much of a difference there is between a single tree and a forest. This was done with a bank churn dataset.
 <details>
 <summary>Data Cleaning</summary>
-I start off every project looking at the data using .info(), .describe(), and just looking at the first and last 5 rows of the dataset. This gives a quick insight on how everything looks and what you need to change. I dropped the State column as I didn't think it was very important, and reformatted the voice mail plan and international plan columns to boolean columns.
+I start off every project looking at the data using .info(), .describe(), and just looking at the first and last 5 rows of the dataset. This gives a quick insight on how everything looks and what you need to change. I dropped the Surname column, gender column, and one hot encoded the card type and geography columns.
 </details>
 <details>
 <summary>Model Training & Testing</summary>
-Then I did my standard scaler and train test split.
+I just used my standard procedure of StandardScaler, train_test_split.
 </details>
 <details>
 <summary>Results</summary>
-Here I used a confusion matrix and the classification report to get more in-depth with the results and how the model predicts. You can see that when it is true that the user churned, it wasn't good at predicting that. This could be due to the lower amount of churned users in the dataset, so it couldn't train well enough. I think that the model is good at predicting when a user will stay, but not when a user is going to leave. This could be fixed with more data potentially.
+The accuracy score was identical between the two models. This could be due to a biased dataset or that it wasn't a real dataset and is simply for practicing machine learning.
 </details>
-
-## Project (Model type)
-This is one of my K Nearest Neighbors practice projects. I got this dataset from Kaggle to practice my KNN models. We are classifying a patients diagnosis as Benign (B) or Malignant (M)
-<details>
-<summary>Data Cleaning</summary>
-I start off every project looking at the data using .info(), .describe(), and just looking at the first and last 5 rows of the dataset. This gives a quick insight on how everything looks and what you need to change. 
-</details>
-<details>
-<summary>Model Training & Testing</summary>
-
-</details>
-<details>
-<summary>Results</summary>
-
-</details>
-
-## Project (Model type)
-This is one of my K Nearest Neighbors practice projects. I got this dataset from Kaggle to practice my KNN models. We are classifying a patients diagnosis as Benign (B) or Malignant (M)
-<details>
-<summary>Data Cleaning</summary>
-I start off every project looking at the data using .info(), .describe(), and just looking at the first and last 5 rows of the dataset. This gives a quick insight on how everything looks and what you need to change. 
-</details>
-<details>
-<summary>Model Training & Testing</summary>
-
-</details>
-<details>
-<summary>Results</summary>
-
-</details>
-
-## Laker Predictor
-### Laker Predictor
-#### Laker Predictor
